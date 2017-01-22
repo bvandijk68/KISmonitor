@@ -1,0 +1,11 @@
+1.0 Jan 22 2017
+Bas van Dijk
+
+This release continuosly monitors the temperatures using the BMP180 sensor
+and sends the data to Ubitdots.
+The time between two sensorreads and data pushes is determined by the ubidot slider.
+
+There is also an Alarm setting in Ubidot. The program checks for alarm status
+every 10 seconds, if the alarm is set the normal interval time is ignored and data is send every 10 seconds, until the alarm is switched off.
+
+
